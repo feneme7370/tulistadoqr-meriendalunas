@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.f-dosis{
+    font-family: 'Dosis', sans-serif;
+}
+.f-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.f-nunito{
+    font-family: 'Nunito', sans-serif;
+}
+
+@layer utilities{
+    .t_level-title{
+        @apply text-center font-bold text-4xl mb-2 text-primary-950;
+    }
+    .t_category-title{
+        @apply font-semibold text-xl ml-2 mb-2 text-primary-950;
+    }
+
+    .t_bg-category{
+        @apply flex justify-start items-center mt-4 gap-3 sm:pr-3 bg-primary-500 h-20 lg:rounded-md;
+    }
+    .t_bg-category-menurouter{
+        @apply flex flex-wrap justify-center items-center gap-3 py-10 bg-primary-500;
+    }
+
+    .t_bg-category-img{
+        @apply w-12 h-12 rounded-r-xl overflow-hidden;
+    }
+    .t_bg-category-menurouter-img{
+        @apply w-full h-full object-cover rounded-lg;
+    }
+
+
+    .t_border-hr-card{
+        @apply border-primary-300;
+    }
+    .t_card__product-descriptions-prices{
+        @apply flex justify-between items-center;
+    }
+    .t_card__product-descriptions-price-green{
+        @apply mb-1 text-sm font-bold text-green-900;
+    }
+    .t_card__product-descriptions-price-red{
+        @apply line-through mb-1 text-xs text-red-700;
+    }
+    .t_card__product-descriptions-add{
+        @apply block whitespace-nowrap bg-green-200 text-green-800 border-b border-green-900 text-sm font-bold my-1 me-2 px-2 py-0.5 rounded-md hover:scale-110 hover:bg-green-300 hover:text-green-900;
+    }
+}
+
+
+
